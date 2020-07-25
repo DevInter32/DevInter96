@@ -1,0 +1,375 @@
+@media only screen and (min-width: 200px) {
+  .noticias a.ver {
+	display: block;
+	float: right;
+	width: 150px;
+    padding: .5em  3em;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .noticias a.ver {
+    padding: .5em  4em;
+	display: block;
+	float: right;
+	width: 150px;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .noticias a.ver {
+    padding: .5em  4em;
+	display: block;
+	float: right;
+	width: 150px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+  .contenedor {
+    width: 100%;
+    
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .contenedor .noticias {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contenedor .noticias .ver {
+    width: 100%;
+    
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info {
+    width: 100%;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 512px) {
+  .contenedor {
+    top: 300px;
+    width: 100%;
+  }
+  .noticias a.ver {
+    padding: .5em  2.5em;
+	display: block;
+	float: right;
+	width: 150px;
+  }
+  .noticias img {
+    position: absolute;
+    left: 5%;
+  }
+  .noticias p.text {
+	text-align: justify;
+	margin: 5px 30px 15px 200px;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 700px) {
+  header label {
+    display: none;
+  }
+  header nav.menu_dev {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    position: absolute;
+    width: 500px;
+    left: 25%;
+    top: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1em;
+    height: auto;
+    background: none; 
+    color: white;
+  }
+
+
+
+  header nav.menu_dev a.log
+  {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5em 2em;
+    right: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-family: roboto Condensed;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+
+
+  header nav.menu_dev a.log:hover
+  {
+    color: #000;
+    background: none;
+  }
+
+
+/*estilo de dropdown*/
+
+header nav.menu_dev a.sub
+{
+  position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5em 2em;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    font-family: roboto Condensed;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+}
+
+header nav.menu_dev a.sub:hover
+{
+  background: none;
+  cursor: pointer;
+}
+
+
+  header nav.menu_dev a.item {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5em 2em;
+    right: 0;
+    text-decoration: none;
+    color: white;
+    font-family: roboto Condensed;
+    -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+            align-content: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  header nav.menu_dev a.item:hover {
+    color: #38c6d8;
+    background: none;
+  }
+  header nav.menu_dev a.item:before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background:#38c6d8;
+    position: absolute;
+    bottom: 0;
+    transition: all .3s;
+  }
+  header nav.menu_dev a.item:hover:before {
+    width: 100%;
+  }
+  header .medio:before {
+    left: 50%;
+  }
+  header .medio:hover:before {
+    left: 0;
+  }
+  img.fond {
+    height: 300px;
+  }
+  .contenedor {
+    top: 300px;
+    width: 80%;
+	margin: 80px auto 0px auto;
+  }
+  .contenedor .face {
+	margin: 1em;
+	display: inline-block;
+	float: right;
+	width: 215px;
+    height: 300px;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  .contenedor .noticias {
+	padding: 25px 25px 50px 25px;
+    position: relative;
+    width: 68%;
+  }
+  .contenedor .noticias a.ver {
+    padding: .5em  2em;
+	display: block;
+	float: right;
+	width: 150px;
+  }
+}
+
+@media only screen and (min-width: 880px) {
+  header nav.menu_dev {
+    position: absolute;
+    width: 500px;
+    left: 45%;
+    top: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contenedor .face {
+	margin: 1em;
+	display: inline-block;
+	float: right;
+    width: 250px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  header nav.menu_dev {
+    position: absolute;
+    width: 500px;
+    left: 50%;
+    top: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contenedor .face {
+	margin: 1em;
+	display: inline-block;
+	float: right;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .text {
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%);
+  }
+}
+
+
+
+
+
+
+/*estilo del dropdown*/
+
+
+
+
+header nav li .children a:hover
+{
+       background: black;             
+       color:#38c6d8;
+       text-align: justify;
+    
+}
+
+li
+{
+  text-align: justify;
+  list-style:none;
+  color: white;
+}
+
+ 
+header nav li .children 
+{
+    display: none;
+    background:black;
+    position: absolute;
+    width: 150%;
+    text-align: justify;    
+    color:white;
+    
+}
+ 
+header nav li .children  
+{
+    display:block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    color:white;
+
+}
+ 
+header nav li .children  a 
+{
+    display: block;
+    color:white;
+}
+ 
+header nav li .children li a span {
+ color:white;   
+}
+
+
+header nav li .children {
+    display: none;
+    background:black;
+    position: absolute;
+    width: 150%;
+    z-index:1000;
+    color:white;
+}
+ 
+header nav  .children {
+    display:block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    color:white;
+}
+ 
+header nav li .children a {
+    display: block;
+    color:white;
+}
+ 
+header nav  li .children a span {
+color:white;
+}
+
