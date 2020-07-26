@@ -119,6 +119,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
   data() {
     return {
@@ -136,12 +137,12 @@ export default {
         //los coloco en ingles para usar el controlador del login que laravel trae por defecto
         email: this.correo,
         password: this.clave,
-        name: this.nombre,
+        nombre: this.nombre,
         password_confirmation: this.clave_confirmacion,
       };
       this.cargando = true;
       this.$alertify.success("Procesando peticion ... ");
-      this.$http.post("register", params)
+      axios.post("registrarse", params)
         .then((response) => {
           console.log(response)
           this.cargando = false;

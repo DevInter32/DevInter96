@@ -102,6 +102,7 @@ export default {
         this.imagen = `http://localhost:8000/img/usuarios/${user.imagen_perfil}`;
       }
     },
+    
     cargar_perfil() {
       const token = localStorage.getItem("token");
       const config = {
@@ -115,7 +116,6 @@ export default {
       };
 
       axios
-        // .post("perfil", bodyParameters, config)
         .post(`perfil?token=${token}`)
         .then(response => {
           console.log;
@@ -133,7 +133,7 @@ export default {
       formData.append("file", imagen[0].files[0]);
 
       axios
-        .post("api/perfil", formData)
+        .post("perfil", formData)
         .then(response => {
           this.cargar_perfil();
           this.$alertify.success("Se ha cambiado su imagen de perfil");
@@ -148,7 +148,7 @@ export default {
         nueva_clave: this.nueva_clave
       };
       axios
-        .put("api/perfil", params)
+        .put("password/cambiar", params)
         .then(response => {
           if (response.data.mensaje == "exito") {
             this.$alertify.success("su clave ha sido cambiada");

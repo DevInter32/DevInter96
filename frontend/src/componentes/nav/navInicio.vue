@@ -25,7 +25,7 @@
 
       <div v-if="token" class="dropdown">
         <a
-          class="dropdown-toggle dropbtn text-white item medio"
+          class="dropdown-toggle dropbtn item medio"
           id="dropdownMenuButton"
           data-toggle="dropdown"
           aria-haspopup="true"

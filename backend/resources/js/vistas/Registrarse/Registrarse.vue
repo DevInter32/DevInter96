@@ -2,7 +2,6 @@
   <div>
       <navInicio></navInicio><br><br><br><br>
       <registrarse></registrarse>
-      <footerInicio></footerInicio>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="card">
-      <router-link tag="a" :to="pagina" id="link_imagen" class="imagen-link">
+      <router-link tag="a" style="overflow: hidden;" :to="pagina" id="link_imagen" class="imagen-link">
         <div class="img_preview img-fluid p-relative">
           <img class="img_entry" :src="imagen" alt />
           <div class="blog_item_date text-white">
@@ -54,7 +54,8 @@ export default {
   },
   created() {
     this.id = this.entrada.id;
-    this.imagen = "storage/img/entradas/" + this.entrada.img_vista_previa;
+    this.imagen = this.entrada.img_vista_previa.includes('http')?this.entrada.img_vista_previa:"storage/img/entradas/" + this.entrada.img_vista_previa;
+    
     this.pagina = "entradas/" + this.entrada.id;
   },
   methods: {

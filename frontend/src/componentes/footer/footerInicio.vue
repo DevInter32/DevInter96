@@ -67,17 +67,13 @@
 
 <style>
 footer {
-  background: linear-gradient(
-    47deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(9, 80, 126, 1) 100%
-  );
+  background: #fff;
 }
 
 .footer-top {
   padding: 60px 0;
   text-align: left;
-  color: #fff;
+  color: #000;
 }
 .footer-contact p {
   word-wrap: break-word;
@@ -87,7 +83,7 @@ footer {
   padding: 15px 0 17px 0;
 
   text-align: left;
-  color: #fff;
+  color: #000;
 }
 
 .footer-top a {
@@ -101,7 +97,7 @@ footer {
 
 .footer-social a {
   font-size: 30px;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   padding: 14px;
 }

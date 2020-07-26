@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import testLog from '../middleware/testLog'
-
+import axios from 'axios'
 const lazyLoad = (view) => () => import(`@/vistas/${view}.vue`)
 
 const renderView = (path, componente, nombre, titulo, props = false, auth = false) => {
@@ -17,9 +17,14 @@ const renderView = (path, componente, nombre, titulo, props = false, auth = fals
     }
   }
 }
-
 Vue.use(Router)
 
+const refresh=()=>{
+  axios.get('actualizar')
+  .then(res=>{
+    localStorage.setItem('token',JSON.stringify(res.data.access_token));
+  })
+};
 const router = new Router({
   linkActiveClass: 'active',
   scrollBehavior: () => ({
@@ -33,11 +38,11 @@ const router = new Router({
     // renderView('/logout', 'Logout/logout', 'logout', 'Cerrar sesión'),
     renderView('/register', 'Registrarse/Registrarse', 'registrarse', 'Registrarse'),
     renderView('/blog', 'Blog/Blog', 'blog', 'Blog'),
-    renderView('/perfil', 'Perfil/Perfil', 'perfil', 'Perfil'),
+    renderView('/perfil', 'Perfil/Perfil', 'perfil', 'Perfil',true),
   ]
 })
-
 router.beforeEach((to, from, next) => {
+  refresh();
   if (!to.meta.requiresAuth) {
     return next()
   }

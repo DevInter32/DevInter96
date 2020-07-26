@@ -2,7 +2,7 @@
   <div>
     <section class="banner banner--principal">
       <div class="banner__media">
-        <img src="../../assets/img/developer-001.jpg" alt="Titulo" />
+        <img src="../../assets/img/developer-001.jpg" style="width:100%" alt="Titulo" />
       </div>
       <!-- /.banner__media -->
       <div class="banner__content content">
@@ -20,7 +20,7 @@
 
     <section class="contenedor">
       <!--section class="container"-->
-      <div class="wrap">
+      <div class="">
         <div class="block">
           <div class="item__block">
             <div class="item__status status--soon">Pronto</div>

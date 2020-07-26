@@ -177,7 +177,7 @@ header nav.menu_dev a.sub:hover
     padding: .5em 2em;
     right: 0;
     text-decoration: none;
-    color: white;
+    color: #000;
     font-family: roboto Condensed;
     -webkit-align-content: center;
         -ms-flex-line-pack: center;

@@ -52,6 +52,7 @@ Route::group(['middleware' => 'auth:api'], function () {
     Route::post('perfil', 'API\UserController@perfil');
     Route::put('password/cambiar', 'API\UserController@cambiar_clave');
     Route::post('perfil/imagen/cargar', 'API\UserController@cambiar_imagen');
+    
     Route::get('actualizar', 'API\Auth\LoginController@refresh')->name('api.jwt.refresh');
     Route::get('logout', 'API\Auth\LoginController@logout')->name('api.jwt.logout');
 
